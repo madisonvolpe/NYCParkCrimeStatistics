@@ -1,3 +1,5 @@
+```{r}
+
 #Read in multiple xlsx files at once 
 temp = list.files(pattern="*.xlsx")
 library(openxlsx)
@@ -51,3 +53,5 @@ Crime[num.cols] <- sapply(Crime[num.cols],as.numeric)
 
 #write to csv
 write.csv(Crime, "ParkCrimesMerged2015.2017.csv")
+```
+
